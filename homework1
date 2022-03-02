@@ -1,0 +1,34 @@
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+print('Как вас зовут?' ' '*3)
+name = input()
+print('Здравствуйте, ' + name + '!')
+print('Сколька вам лет' + ' ' + name + '?')
+age = input()
+print('Введите число')
+k = int(input())
+if k < -5:
+    print('good')
+elif -5 <= k <= 5:
+    print('norm')
+else:
+    print('bad')
+a = int(98.7)
+print(a)
+b = int(12.2)
+print(b)
+surname ="Светлая"
+print(surname[:])
+print(surname[0:4])
