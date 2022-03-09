@@ -1,0 +1,27 @@
+operation = input('''
+Please choose operation :
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+''')
+
+def calculate():
+        print('Welcome to calculator)')
+number1 = int(input('Enter your first number: '))
+number2 = int(input('Enter your second number: '))
+if operation == '+':
+    print('{} + {} = '.format(number1, number2))
+    print(number1 + number2)
+elif operation == '-':
+    print('{} - {} = '.format(number1, number2))
+    print(number1 - number2)
+elif operation == '*':
+    print('{} * {} = '.format(number1, number2))
+    print(number1 * number2)
+elif operation == '/':
+    print('{} / {} = '.format(number1, number2))
+    print(number1 / number2)
+else:
+    print('Sorry, i cant help you :(')
+    calculate()
