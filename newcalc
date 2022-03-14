@@ -1,0 +1,41 @@
+count = 0
+while True:
+    try:
+        number1 = float(input('Enter your first number: '))
+        operation = input('''
+        Please choose operation :
+        + for addition
+        - for subtraction
+        * for multiplication
+        / for division
+        ''')
+        if operation != '-' and operation != '+' and operation != '/' and operation != '*':
+            print('Enter only + or - or / or *')
+            break
+        number2 = float(input(' Enter your second number: '))
+        if operation == '+':
+            print('{} + {} = '.format(number1, number2))
+            print(number1 + number2)
+        elif operation == '-':
+            print('{} - {} = '.format(number1, number2))
+            print(number1 - number2)
+        elif operation == '*':
+            print('{} * {} = '.format(number1, number2))
+            print(number1 * number2)
+        elif operation == '/':
+            print('{} / {} = '.format(number1, number2))
+            print(number1 / number2)
+
+    except ZeroDivisionError:
+        print('ERROR')
+    except ValueError:
+        print('enter only numbers')
+    c = input('Want continue? '
+              'please enter (Yes,Stop) :')
+    if c == 'Yes':
+        count = count + 1
+        print(f"You did {count} operations")
+        continue
+    else:
+
+        break
