@@ -1,3 +1,4 @@
+from num2words import num2words
 count = 0
 while True:
     try:
@@ -16,15 +17,19 @@ while True:
         if operation == '+':
             print('{} + {} = '.format(number1, number2))
             print(number1 + number2)
+            print(num2words(number1 + number2))
         elif operation == '-':
             print('{} - {} = '.format(number1, number2))
             print(number1 - number2)
+            print(num2words(number1 - number2))
         elif operation == '*':
             print('{} * {} = '.format(number1, number2))
             print(number1 * number2)
+            print(num2words(number1 * number2))
         elif operation == '/':
             print('{} / {} = '.format(number1, number2))
             print(number1 / number2)
+            print(num2words(number1 / number2))
 
     except ZeroDivisionError:
         print('ERROR')
